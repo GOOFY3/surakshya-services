@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -18,7 +18,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #3F6679;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -27,7 +27,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 .container {
@@ -39,25 +39,30 @@ input[type=submit]:hover {
 </head>
 <body>
 
+<a href="http://localhost:3000/"><i class="material-icons">arrow_back</i></a>
+
 <h3>Contact Form</h3>
 
 <div class="container">
-  <form action="/contact" method="post">
-    <label for="fname">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
+  <form action="/contact" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
-    <label for="lname">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your Email..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address.." style="width:99%" required><br><br>
+    
+    <label for="lname">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="subject" required>
+
+    <label for="subject">Body</label>
+    <textarea id="body" name="body" placeholder="Write something.." style="height:200px" required></textarea>
 
     <input type="submit" value="Submit">
   </form>
 </div>
 
 </body>
-<script>
-
-</script>
 </html>

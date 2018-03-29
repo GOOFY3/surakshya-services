@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('surakshya-services:server');
+var debug = require('debug')('security:server');
 var http = require('http');
 
 /**
