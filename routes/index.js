@@ -16,7 +16,7 @@ router.post('/contact', (req, res) => {
   const msg = {
     to: 'ankitjena13@gmail.com',
     from: 'test@example.com',
-    subject: 'Sending with SendGrid is Fun',
+    subject: 'New comment',
     text: 'and easy to do anywhere, even with Node.js',
     html: '<p>'+ req.body.subject +'</p><br><p>By'+ req.body.name + '</p><br><p>'+ req.body.email + '</p>',
   };
