@@ -11,7 +11,7 @@ router.get('/contact',function(req,res,next){
 });
 
 router.post('/contact',function(req,res,next){
-    sgMail.setApiKey("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");
+    sgMail.setApiKey("");
     const msg = {
         to: "justblankb@gmail.com",
         from: req.body.email,
